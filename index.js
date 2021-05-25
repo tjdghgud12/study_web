@@ -26,7 +26,7 @@ app.get('/', (req, res) => res.send('hello world!라오라오라'))
 app.post('/register', (req, res) => {
   //회원가입 정보를 db에 넣는 부분
   const user = new User(req.body)
-
+  
   user.save((err, userInfo) => {
     if(err) return res.json({ success: false, err})
     return res.status(200).json({
