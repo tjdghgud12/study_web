@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import { useDispatch } from  'react-redux';
 import { withRouter } from 'react-router-dom';
 import { loginUser } from '../../../_actions/user_action';
-import axios from 'axios';
 
 function LoginPage(props) {
     const dispatch = useDispatch();
